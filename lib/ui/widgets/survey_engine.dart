@@ -17,6 +17,23 @@ class SurveyEngine extends StatelessWidget {
     return generateFormWidget();
   }
 
+  // We can add additional elements here
+  buildElement(Elements element) {
+    switch (element.type) {
+      case "text":
+        return buildText(element);
+      case "radiogroup":
+        return buildRadioGroup(element);
+      case "checkbox":
+        return buildCheckBox(element);
+      case "dropdown":
+        return buildDropDown(element);
+      default:
+        return Container();
+    }
+  }
+
+  // This function will generate the form widget
   Widget generateFormWidget() {
     return Form(
       key: _formKey,
@@ -49,29 +66,20 @@ class SurveyEngine extends StatelessWidget {
     );
   }
 
+
+  // This will build vertical spacing
   SizedBox buildVerticalSpacing() {
     return const SizedBox(
       height: 20,
     );
   }
 
+  // This will build the title of the page
   Text buildTitle(Pages pages) => Text(pages.title ?? "", style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold));
 
-  buildElement(Elements element) {
-    switch (element.type) {
-      case "text":
-        return buildText(element);
-      case "radiogroup":
-        return buildRadioGroup(element);
-      case "checkbox":
-        return buildCheckBox(element);
-      case "dropdown":
-        return buildDropDown(element);
-      default:
-        return Container();
-    }
-  }
 
+
+  // This will build the text
   buildText(Elements element) {
     return Visibility(
       visible: isElementVisible(element),
@@ -94,6 +102,7 @@ class SurveyEngine extends StatelessWidget {
     );
   }
 
+  // This will build the question
   buildQuestion(Elements element) {
     return Text(element.title ?? "", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold));
   }

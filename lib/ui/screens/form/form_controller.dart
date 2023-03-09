@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:surveyjs_projile/model/form_model.dart';
 import 'package:surveyjs_projile/model/survey_js_form.dart';
-import 'package:surveyjs_projile/utils/survey_engine.dart';
+import 'package:surveyjs_projile/ui/widgets/survey_engine.dart';
 import 'package:surveyjs_projile/utils/x_controller.dart';
 
 class FormController extends XController {
