@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327988464537",
+    "project_id": "surveyjs-28c33",
+    "storage_bucket": "surveyjs-28c33.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327988464537:android:5b72f38c3cd00dfe1ba108",
+        "android_client_info": {
+          "package_name": "com.projile.surveyjs.surveyjs_projile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327988464537-6vj7ivctlt694fjo8re1tviccvi05b40.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnHeSaB7sE0Ca0-2sQbxRoKxe-KWFSadM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327988464537-6vj7ivctlt694fjo8re1tviccvi05b40.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
