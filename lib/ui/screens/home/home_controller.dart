@@ -28,14 +28,17 @@ class HomeController extends XController {
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.grey, fontSize: 12)),
           const SizedBox(height: 10),
-          ...forms.map((filePath) => ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                ),
-                onPressed: () {
-                  goToForm(filePath);
-                },
-                child: Text(filePath.split("/").last.split(".").first)),
+          ...forms.map((filePath) => Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                  ),
+                  onPressed: () {
+                    goToForm(filePath);
+                  },
+                  child: Text(filePath.split("/").last.split(".").first)),
+          ),
               ),
         ],
       ),
